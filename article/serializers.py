@@ -49,8 +49,9 @@ class ArticleCreateSerializer(serializers.ModelSerializer):
             'source_url',
             'image_main',
             'content',
+            'is_public',
             'tags',
-            'categories',
+            'categories'
         ]
         extra_kwargs = {'author': {'read_only': True}}
 
